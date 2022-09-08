@@ -8,7 +8,7 @@ class Calculator {
     
     Console.WriteLine("  --------------------");
     
-    Console.Write("Enter the first value:: ");
+    Console.Write("Enter the first value: ");
     string firstS = Console.ReadLine();
     float first = float.Parse(firstS);
 
