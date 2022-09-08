@@ -1,0 +1,59 @@
+using System;
+
+class Calculator {
+  public static void Main (string[] args) {
+    
+    Console.WriteLine("   <<<Calculator>>>");
+    Console.WriteLine("<<<made with a float>>>");
+    
+    Console.Write("Enter the first value:: ");
+    string firstS = Console.ReadLine();
+    float first = float.Parse(firstS);
+
+    Console.WriteLine("--------------------");
+    
+    Console.Write("Enter the second value: ");
+    string secondS = Console.ReadLine();
+    float second = float.Parse(secondS);
+
+    Console.WriteLine("--------------------");
+    
+    Console.WriteLine("What kind of surgery do you want to do?");
+    Console.WriteLine("Available *, /, +, -.");
+    Console.Write("Enter the operation sign: ");
+    string znakS = Console.ReadLine();
+    if(znakS == "*"|| znakS == "/" || znakS == "+" || znakS == "-"){ 
+      
+      Console.WriteLine("--------------------");
+    
+      if(znakS == "*"){
+        Console.WriteLine($"{first} * {second} = {first * second}");
+      }
+    
+      else if(znakS == "/"){
+      
+        if (first == 0 || second == 0){
+          Console.WriteLine($"{first} / {second} = 0");
+        }
+        
+        else{
+          Console.WriteLine($"{first} / {second} = {first / second}");
+        }
+      }
+    
+      else if(znakS == "+"){
+      Console.WriteLine($"{first} + {second} = {first + second}");
+      }
+    
+      else{
+      Console.WriteLine($"{first} - {second} = {first - second}");
+      }
+    }
+    
+    else{
+      Console.WriteLine("--------------------");
+      
+      Console.WriteLine("The operation sign is entered incorrectly, try again.");
+    }  
+  }
+}
