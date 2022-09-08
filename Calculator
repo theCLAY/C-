@@ -3,8 +3,10 @@ using System;
 class Calculator {
   public static void Main (string[] args) {
     
-    Console.WriteLine("   <<<Calculator>>>");
-    Console.WriteLine("<<<made with a float>>>");
+    Console.WriteLine("      Calculator");
+    Console.WriteLine("   github.com/theCLAY");
+    
+    Console.WriteLine("  --------------------");
     
     Console.Write("Enter the first value:: ");
     string firstS = Console.ReadLine();
