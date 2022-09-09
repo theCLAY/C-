@@ -34,8 +34,8 @@ class Calculator {
     
       else if(znakS == "/"){
       
-        if (first == 0 || second == 0){
-          Console.WriteLine($"{first} / {second} = 0");
+        if (second == 0){
+          Console.WriteLine("Don't divide by zero :)");
         }
         
         else{
